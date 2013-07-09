@@ -1,0 +1,26 @@
+\name{relativeLocalRetention}
+\alias{relativeLocalRetention}
+\title{Relative local retention of a connectivity matrix}
+\usage{
+relativeLocalRetention(conn.mat)
+}
+\arguments{
+  \item{conn.mat}{A square connectivity matrix.}
+}
+\description{
+Relative local retention is defined as the diagonal
+elements of the connectivity matrix divided by the sum of
+the corresponding column of the connectivity matrix.
+}
+\examples{
+library(ConnMatTools)
+data(chile.loco)
+
+sr <- selfRecruitment(chile.loco)
+lr <- localRetention(chile.loco)
+rlr <- relativeLocalRetention(chile.loco)
+}
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+

@@ -1,0 +1,44 @@
+\encoding{UTF-8}
+\name{qualitySubpops}
+\alias{qualitySubpops}
+\title{Quality measure for subpopulation division}
+\usage{
+qualitySubpops(subpops.lst, conn.mat)
+}
+\arguments{
+  \item{subpops.lst}{A list whose elements are vectors of
+  indices for each subpopulation.  If a vector of integers
+  is given, then \code{\link{subpopsVectorToList}} is
+  applied to convert it to a list of subpopulations.}
+
+  \item{conn.mat}{A square connectivity matrix.}
+}
+\value{
+The quality statistic.
+
+A smaller value of the quality statistic indicates less
+leakage.
+}
+\description{
+A measure of the leakage between subpopulations for a given
+division of the connectivity matrix into subpopulations.
+This statistic is equal to 1 - mean(RLR) of the reduced
+connectivity matrix, where RLR=relative local retention
+(\code{\link{relativeLocalRetention}}), i.e., the fraction
+of settling individuals that originated at their site of
+settlement.
+}
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\references{
+Jacobi, M. N., André, C., Döös, K., and Jonsson, P. R.
+2012.  Identification of subpopulations from connectivity
+matrices. Ecography, 35: 1004-1016.
+}
+\seealso{
+See also \code{\link{optimalSplitConnMat}},
+\code{\link{subpopsVectorToList}},
+\code{\link{relativeLocalRetention}}
+}
+

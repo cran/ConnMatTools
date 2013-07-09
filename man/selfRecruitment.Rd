@@ -1,0 +1,33 @@
+\name{selfRecruitment}
+\alias{selfRecruitment}
+\title{Self recruitment of a connectivity matrix}
+\usage{
+selfRecruitment(conn.mat, eggs = NULL)
+}
+\arguments{
+  \item{conn.mat}{A square connectivity matrix.}
+
+  \item{eggs}{A vector of egg production values for each
+  site.  Defaults to \code{NULL}, equivalent to assuming
+  all sites have equal egg production.}
+}
+\description{
+If egg production is uniform over sites, then self
+recruitment is defined as the diagonal elements of the
+connectivity matrix divided by the sum of the corresponding
+row of the connectivity matrix.  If not, then the elements
+of the dispersal matrix must be weighted by the number of
+eggs produced.
+}
+\examples{
+library(ConnMatTools)
+data(chile.loco)
+
+sr <- selfRecruitment(chile.loco)
+lr <- localRetention(chile.loco)
+rlr <- relativeLocalRetention(chile.loco)
+}
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+

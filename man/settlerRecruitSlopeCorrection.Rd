@@ -1,0 +1,55 @@
+\name{settlerRecruitSlopeCorrection}
+\alias{settlerRecruitSlopeCorrection}
+\title{Correction for slope of settler-recruit relationship}
+\usage{
+settlerRecruitSlopeCorrection(conn.mat, slope = 1, natural.LEP = 1,
+  critical.FLEP = 0.35, use.arpack = TRUE)
+}
+\arguments{
+  \item{conn.mat}{a square connectivity matrix.}
+
+  \item{slope}{slope at the origin of the settler-recruit
+  relationship.  Only interesting to fix this argument if
+  it is a vector of length = \code{dim(conn.mat)[2]} (i.e.,
+  if the slope varies among sites and one wants to globally
+  scale all slopes so that the collapse point matches the
+  global collapse point).}
+
+  \item{natural.LEP}{value of lifetime-egg-production
+  (LEP), also known as eggs-per-recruit, in the absence of
+  fishing.  Can be a vector of length =
+  \code{dim(conn.mat)[2]}.  Defaults to 1.}
+
+  \item{critical.FLEP}{Fraction of natural.LEP at which
+  collapse occurs.  Defaults to 0.35.}
+
+  \item{use.arpack}{Boolean determining if calculation is
+  to be done with \code{\link[igraph]{arpack}} function
+  from the \link[igraph]{igraph} package. This is much
+  quicker for large matrices, but requires
+  \link[igraph]{igraph}. Defaults to TRUE, but will use
+  eigen instead if \link[igraph]{igraph} is not found.}
+}
+\value{
+The slope argument corrected so that collapse happens when
+LEP is critical.FLEP * natural.LEP.
+}
+\description{
+This function corrects the slope of the settler-recruit
+curve so that the collapse point of the spatially-explicit
+population model corresponding to the connectivity matrix
+agrees with that of the global non-spatially-explicit
+model.  Uses the method in White (2010).
+}
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\references{
+White, J. W. 2010. Adapting the steepness parameter from
+stock-recruit curves for use in spatially explicit models.
+Fisheries Research, 102: 330-334.
+}
+\seealso{
+See also \code{\link{eigs}}, \code{\link[igraph]{arpack}}
+}
+

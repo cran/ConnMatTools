@@ -1,0 +1,24 @@
+ConnMatTools 0.1.4
+------------------
+
+* Updating version to prepare for submission to CRAN and transfer to github.
+
+ConnMatTools 0.1.2
+------------------
+
+* Added function written by Marco Andrello for applying eigenvalue perturbation 
+  method in Jacobi & Jonsson (2011) to reserve selection based on connectivity.
+
+ConnMatTools 0.1.1
+------------------
+
+* Added several tests, a test dataset and functions for calculating basic statistics 
+  on connectivity matrices.
+
+ConnMatTools 0.1
+----------------
+
+* Initial release containing code for breaking connectivity matrices into 
+  subpopulations and running basic spatial population dynamics models.
+* Needs a lot more debugging and test codes.
+

@@ -1,0 +1,53 @@
+\encoding{UTF-8}
+\name{splitConnMat}
+\alias{splitConnMat}
+\title{Split connectivity matrix into subpopulations}
+\usage{
+splitConnMat(indices, conn.mat, beta, tries = 5, threshold = 1e-10,
+  alpha = 0.1, maxit = 500)
+}
+\arguments{
+  \item{indices}{vector of indices of sites in a
+  subpopulation}
+
+  \item{conn.mat}{a square connectivity matrix.  This
+  matrix has typically been normalized and made symmetric
+  prior to using this function.}
+
+  \item{beta}{controls degree of splitting of connectivity
+  matrix, with larger values generating more
+  subpopulations.}
+
+  \item{tries}{how many times to restart the optimization
+  algorithm. Defaults to 5.}
+
+  \item{threshold}{controls when to stop each "try".
+  Defaults to 1e-10.}
+
+  \item{alpha}{controls rate of convergence to solution}
+
+  \item{maxit}{Maximum number of iterations to perform per
+  "try".}
+}
+\value{
+List with one or two elements, each containing a vector of
+indices of sites in a subpopulations
+}
+\description{
+This function tries to optimally split a given
+subpopulation into two smaller subpopulations.
+}
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\references{
+Jacobi, M. N., André, C., Döös, K., and Jonsson, P. R.
+2012. Identification of subpopulations from connectivity
+matrices. Ecography, 35: 1004-1016.
+}
+\seealso{
+See also \code{\link{optimalSplitConnMat}},
+\code{\link{recSplitConnMat}},
+\code{\link{subpopsVectorToList}}
+}
+

@@ -1,0 +1,52 @@
+\name{laplacianConnMat}
+\alias{laplacianConnMat}
+\title{Uniform Laplacian connectivity matrix}
+\usage{
+laplacianConnMat(num.sites, disp.dist, shift = 0, boundaries = "nothing")
+}
+\arguments{
+  \item{num.sites}{number of sites.  Sites are assumed to
+  be aligned on a linear coastline.}
+
+  \item{disp.dist}{dispersal distance in "site" units
+  (i.e., 1 site = 1 unit of distance)}
+
+  \item{shift}{advection distance in "site" units.
+  Defaults to 0.}
+
+  \item{boundaries}{string indicating what to do at
+  boundaries.  Defaults to "nothing".  Possible values
+  include: "nothing", "conservative" and "circular"}
+}
+\value{
+A square connectivity matrix
+}
+\description{
+This function generates a connectivity matrix that is
+governed by a Laplacian distribution:
+\code{D[i,j]=exp(abs(x[i]-y[i]-shift)/disp.dist)/2/disp.dist}
+}
+\details{
+The \code{boundary} argument can have the following
+different values: "nothing" meaning do nothing special with
+boundaries; "conservative" meaning force columns of matrix
+to sum to 1; and "circular" meaning wrap edges.
+}
+\examples{
+library(ConnMatTools)
+cm <- laplacianConnMat(100,10,15,"circular")
+image(cm)
+}
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\references{
+Kaplan, D. M., Botsford, L. W., and Jorgensen, S. 2006.
+Dispersal per recruit: An efficient method for assessing
+sustainability in marine reserve networks. Ecological
+Applications, 16: 2248-2263.
+}
+\seealso{
+See also \code{\link{DispersalPerRecruitModel}}
+}
+
