@@ -1,7 +1,7 @@
 Package: ConnMatTools
 Type: Package
 Title: Tools for working with connectivity matrices
-Version: 0.1.4
+Version: 0.1.5
 Date: 2013-07-09
 Author: Marco Andrello <marco.andrello@gmail.com>
 Maintainer: David M. Kaplan <dmkaplan2000@gmail.com>
@@ -15,7 +15,7 @@ Collate: 'ConnMatTools.R' 'eigs.R' 'Jacobi_EPT_reserve_selection.R'
         'datasets.R' 'dpr_model.R' 'retentionStats.R'
         'jacobi_etal_2012.R'
 License: GPL (>= 2)
-Packaged: 2014-04-03 12:29:41 UTC; dmk
+Packaged: 2014-06-20 15:08:07 UTC; dmk
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-04-03 18:30:23
+Date/Publication: 2014-06-21 09:01:40

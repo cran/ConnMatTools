@@ -1,3 +1,9 @@
+ConnMatTools 0.1.5
+------------------
+
+* Small fixes to avoid errors in test script for optimal splitting of connectivity
+  matrices.
+
 ConnMatTools 0.1.4
 ------------------
 

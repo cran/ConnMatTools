@@ -7,9 +7,9 @@ chile.loco.split <- optimalSplitConnMat(chile.loco,normalize.cols=FALSE,
                                         betas=betas)
 
 # Extra 3rd division
-print(paste("Examining split with",names(chile.loco.split$best.splits)[3],
+print(paste("Examining split with",names(chile.loco.split$best.splits)[1],
             "subpopulations."))
-pops <- subpopsVectorToList(chile.loco.split$subpops[,chile.loco.split$best.splits[[3]]$index])
+pops <- subpopsVectorToList(chile.loco.split$subpops[,chile.loco.split$best.splits[[1]]$index])
 
 reduce.loco <- reducedConnMat(pops,chile.loco)
 
