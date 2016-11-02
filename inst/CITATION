@@ -1,0 +1,9 @@
+bibentry(
+   bibtype = "Article",
+   title = "Uncertainty in empirical estimates of marine larval connectivity",
+   author = as.person("David M. Kaplan [aut], Marion Cuif [aut], Cecile Fauvelot [aut], Laurent Vigliola [aut], Tri Nguyen-Huu [aut], Josina Tiavouane [aut], Christophe Lett [aut]"),
+   year = "in press",
+   journal = "ICES Journal of Marine Science",
+   doi = "10.1093/icesjms/fsw182",
+   key = "connmattools-paper"
+)

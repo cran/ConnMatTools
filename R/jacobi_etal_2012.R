@@ -17,7 +17,7 @@
 #' @return List with one or two elements, each containing a vector of
 #' indices of sites in a subpopulations
 #'
-#' @references Jacobi, M. N., André, C., Döös, K., and Jonsson,
+#' @references Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
 #' P. R. 2012. Identification of subpopulations from connectivity
 #' matrices. Ecography, 35: 1004-1016.
 #' 
@@ -29,6 +29,7 @@
 #' David M. Kaplan \email{dmkaplan2000@@gmail.com}
 #' @encoding UTF-8
 #' @export
+#' @importFrom stats runif
 splitConnMat <- function(indices,conn.mat,beta,tries=5,
                     threshold=1e-10,alpha=0.1,maxit=500) {
     # makes a submatrix of the total connectivity matrix only
@@ -97,7 +98,7 @@ splitConnMat <- function(indices,conn.mat,beta,tries=5,
 #' with larger values generating more subpopulations.
 #' @param \dots further arguments to be passed to \code{\link{splitConnMat}}
 #' 
-#' @references Jacobi, M. N., André, C., Döös, K., and Jonsson,
+#' @references Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
 #' P. R. 2012. Identification of subpopulations from connectivity
 #' matrices. Ecography, 35: 1004-1016.
 #' 
@@ -135,7 +136,7 @@ recSplitConnMat <- function(subpops.lst, conn.mat, beta, ...) {
 #' @return List of the same format as subpops.lst, but with
 #' potentially fewer subpopulations.
 #'
-#' @references Jacobi, M. N., André, C., Döös, K., and Jonsson,
+#' @references Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
 #' P. R. 2012. Identification of subpopulations from connectivity
 #' matrices. Ecography, 35: 1004-1016.
 #' 
@@ -187,7 +188,7 @@ mergeSubpops <- function ( subpops.lst,  conn.mat, beta ) {
 #'   reduced connectivity matrix will be equal to the sum of all elements of the
 #'   original connectivity matrix.
 #'   
-#' @references Jacobi, M. N., André, C., Döös, K., and Jonsson, P. R. 2012. 
+#' @references Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012. 
 #'   Identification of subpopulations from connectivity matrices. Ecography, 35:
 #'   1004-1016.
 #'   
@@ -233,7 +234,7 @@ reducedConnMat <- function( subpops.lst, conn.mat ) {
 #'   
 #'   A smaller value of the quality statistic indicates less leakage.
 #'   
-#' @references Jacobi, M. N., André, C., Döös, K., and Jonsson, P. R. 2012. 
+#' @references Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012. 
 #'   Identification of subpopulations from connectivity matrices. Ecography, 35:
 #'   1004-1016.
 #'   
@@ -263,7 +264,7 @@ qualitySubpops <- function( subpops.lst, conn.mat )
 #'   
 #' @return vector of beta values
 #'   
-#' @references Jacobi, M. N., André, C., Döös, K., and Jonsson, P. R. 2012.
+#' @references Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012.
 #'   Identification of subpopulations from connectivity matrices. Ecography, 35:
 #'   1004-1016.
 #'   
@@ -335,7 +336,7 @@ betasVectorDefault <- function(n,steps=10,cycles=3/4,
 #' population dynamics because it works well with matrix
 #' multiplication (e.g., \code{settlers = conn.mat \%*\% eggs}).
 #'
-#' @references Jacobi, M. N., André, C., Döös, K., and Jonsson,
+#' @references Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
 #'  P. R. 2012. Identification of subpopulations from connectivity
 #'  matrices. Ecography, 35: 1004-1016.
 #' 

@@ -1,15 +1,15 @@
-#' Tools for working with connectivity matrices
+#' Tools for Working with Connectivity Data
 #' 
-#' ConnMatTools collects several different methods for analyzing and
-#' working with connectivity matrices in R.  Though primarily oriented
+#' Collects several different methods for analyzing and
+#' working with connectivity data in R.  Though primarily oriented
 #' towards marine larval dispersal, many of the methods are general
 #' and useful for terrestrial systems as well.
 #'
 #' \tabular{ll}{
 #' Package: \tab ConnMatTools\cr
 #' Type: \tab Package\cr
-#' Version: \tab 0.1.5\cr
-#' Date: \tab 2013-07-09\cr
+#' Version: \tab 0.3.3\cr
+#' Date: \tab 2016-11-01\cr
 #' License: \tab GPL (>= 2)\cr
 #' LazyLoad: \tab no\cr
 #' }
@@ -23,7 +23,7 @@
 #' @keywords package
 #' @examples
 #' \dontrun{optimalSplitConnMat(CM)}
-#' @seealso See \code{\link{optimalSplitConnMat}}
+#' @seealso See \code{\link{optimalSplitConnMat}}, \code{\link{d.rel.conn.beta.prior}}
 #' 
 #' @references Jacobi, M. N., and Jonsson, P. R. 2011. Optimal networks of 
 #'   nature reserves can be found through eigenvalue perturbation theory of the 
@@ -37,6 +37,9 @@
 #' @references Kaplan, D. M., Botsford, L. W., and Jorgensen, S. 2006. Dispersal 
 #'   per recruit: An efficient method for assessing sustainability in marine 
 #'   reserve networks. Ecological Applications, 16: 2248-2263.
+#' @references Kaplan DM, Cuif M, Fauvelot C, Vigliola L, Nguyen-Huu T, Tiavouane J and Lett C 
+#'   (in press) Uncertainty in empirical estimates of marine larval connectivity. 
+#'   ICES Journal of Marine Science. doi:10.1093/icesjms/fsw182.
 #' @references White, J. W. 2010. Adapting the steepness parameter from 
 #'   stock-recruit curves for use in spatially explicit models. Fisheries 
 #'   Research, 102: 330-334.

@@ -49,7 +49,7 @@ eigs <- function( M, nev=min(dim(M)[1]-1,1),
   if (nev > n) 
     stop("nev must be less than dimension of M")
   
-  if (use.arpack && require(igraph)) {
+  if (use.arpack && requireNamespace("igraph", quietly = TRUE)) {
     options.arpack$which = which
     options.arpack$n = n
     options.arpack$nev = nev
@@ -58,7 +58,7 @@ eigs <- function( M, nev=min(dim(M)[1]-1,1),
     #browser()
     ff = function(x,extra) { extra %*%x }
         
-    v = arpack(ff, extra=M, sym=sym, options=options.arpack)
+    v = igraph::arpack(ff, extra=M, sym=sym, options=options.arpack)
   } else {
     warning("Using eigen. May be slow.  Use arpack in igraph package to improve speed.")
     v = eigen(M,symmetric=sym)

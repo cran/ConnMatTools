@@ -31,7 +31,7 @@
 #'   
 #' @references Jacobi, M. N., and Jonsson, P. R. 2011. Optimal networks of 
 #'   nature reserves can be found through eigenvalue perturbation theory of the 
-#'   connectivity matrix. Ecological Applications, 21: 1861–1870.
+#'   connectivity matrix. Ecological Applications, 21: 1861-1870.
 #'   
 #' @author Marco Andrello \email{marco.andrello@@gmail.com}
 #' @encoding UTF-8

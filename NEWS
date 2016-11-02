@@ -1,3 +1,42 @@
+ConnMatTools 0.3.3
+------------------
+
+* Add a CITATION file for package.
+
+ConnMatTools 0.3.2
+------------------
+
+* Fix for problems due to cumulative distribution function for relative connectivity sometimes
+  producing values slightly larger than 1.
+
+ConnMatTools 0.3.1
+------------------
+
+* Replacing bootstrap approach to solving finite settler pool problem in relative 
+  connectivity code with analytic approach based on hypergeometric distributions.
+  
+ConnMatTools 0.3.0
+------------------
+
+* Finished initial release of package including code for Bayesian-based estimation of 
+  relative connectivity.
+  
+* Also include somes fixes to DPRHomeRange function and a number of minor changes to meet
+  new CRAN standards.
+
+ConnMatTools 0.2.1
+------------------
+
+* Alpha release of package including Bayesian-based code for estimating relative connectivity.  
+  Most of the central functions are available, plus some tests, but a few more pieces 
+  need to be added.
+
+ConnMatTools 0.2.0
+------------------
+
+* Alpha release of package including initial code for relative connecitvity estimation 
+  from field observations
+
 ConnMatTools 0.1.5
 ------------------
 
