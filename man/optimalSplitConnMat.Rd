@@ -5,10 +5,17 @@
 \alias{optimalSplitConnMat}
 \title{Iteratively, optimally split a connectivity matrix}
 \usage{
-optimalSplitConnMat(conn.mat, normalize.cols = TRUE,
-  make.symmetric = "mean", remove.diagonal = FALSE, cycles = 2,
+optimalSplitConnMat(
+  conn.mat,
+  normalize.cols = TRUE,
+  make.symmetric = "mean",
+  remove.diagonal = FALSE,
+  cycles = 2,
   betas = betasVectorDefault(ifelse(normalize.cols, dim(conn.mat)[2],
-  prod(dim(conn.mat))/sum(conn.mat)), steps), steps = 10, ...)
+    prod(dim(conn.mat))/sum(conn.mat)), steps),
+  steps = 10,
+  ...
+)
 }
 \arguments{
 \item{conn.mat}{A square connectivity matrix.}
@@ -89,9 +96,6 @@ sr <- selfRecruitment(reduce.loco)
 lr <- localRetention(reduce.loco)
 rlr <- relativeLocalRetention(reduce.loco)
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
  P. R. 2012. Identification of subpopulations from connectivity
@@ -102,4 +106,6 @@ See also \code{\link{splitConnMat}},
 \code{\link{recSplitConnMat}}, \code{\link{mergeSubpops}},
 \code{\link{qualitySubpops}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

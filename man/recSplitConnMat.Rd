@@ -24,9 +24,6 @@ This funtion recursively splits each subpopulation of a list of
 subpopulations until none of the subpopulations can be split
 further to improve the minimization.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
 P. R. 2012. Identification of subpopulations from connectivity
@@ -37,4 +34,6 @@ See also \code{\link{optimalSplitConnMat}},
 \code{\link{splitConnMat}},
 \code{\link{subpopsVectorToList}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

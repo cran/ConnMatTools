@@ -22,9 +22,6 @@ children generated from either real potential parent-pairs (the 'in' group)
 or artificial parents generated from observed allelic frequencies (the 'out' 
 group).
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Gerber S, Chabrier P, Kremer A (2003) FAMOZ: a software for 
   parentage analysis using dominant, codominant and uniparentally inherited 
@@ -37,5 +34,7 @@ Kaplan et al. (submitted) Uncertainty in marine larval
 \seealso{
 See also \code{\link{d.rel.conn.dists.func}}
 }
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
 \keyword{data}
-

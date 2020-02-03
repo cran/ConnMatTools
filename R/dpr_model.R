@@ -53,7 +53,7 @@ NULL
 #' @include eigs.R
 settlerRecruitSlopeCorrection <- function(conn.mat,slope=1,natural.LEP=1,
                                           critical.FLEP=0.35,use.arpack=TRUE) {
-  if (class(conn.mat) != "matrix")
+  if (all(class(conn.mat) != "matrix"))
     stop("Input conn.mat must be a matrix.")
   
   if (length(natural.LEP)>1)
@@ -162,7 +162,7 @@ DispersalPerRecruitModel <-
   function(LEP,conn.mat,recruits0,
            timesteps=10, settler.recruit.func=hockeyStick,...) {
     
-    if (class(conn.mat) != "matrix")
+    if (all(class(conn.mat) != "matrix"))
       stop("Input conn.mat must be a matrix.")
     
     r = recruits0
@@ -252,9 +252,9 @@ DPRHomerangeGravity <-
            LEP.of.f=function(f) 1-f, YPR.of.f=function(f) f, 
            gamma=0, gravity.ts.interval=1, ...) {
     
-    if (class(larval.mat) != "matrix")
+    if (all(class(larval.mat) != "matrix"))
       stop("Input larval.mat must be a matrix.")
-    if (class(adult.mat) != "matrix")
+    if (all(class(adult.mat) != "matrix"))
       stop("Input adult.mat must be a matrix.")
     
     r = recruits0

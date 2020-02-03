@@ -41,7 +41,7 @@ eigs <- function( M, nev=min(dim(M)[1]-1,1),
                   which="LM",
                   use.arpack=TRUE,
                   options.arpack=NULL ) {
-  if (class(M) != "matrix")
+  if (all(class(M) != "matrix"))
     stop("Input M must be a matrix.")
   
   n = dim(M)[1]

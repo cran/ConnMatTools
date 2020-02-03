@@ -313,6 +313,6 @@ q.rel.conn.dists.func <- function(obs,d.unmarked,d.marked,p=1,
   ff = f(phi)
   ff = ff / max(ff) # Need to renormalize due to slight integration errors
   
-  return(rel.conn.approxfun(ff,phi,...))
+  return(rel.conn.approxfun(ff,phi))
 }
 

@@ -25,11 +25,10 @@ Beverton & Holt (1957): \code{ slope * settlers / (1+slope*settlers/Rmax) }
 \code{slope} and \code{Rmax} can both either be scalars or vectors of the
 same length as \code{S}.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Beverton RJH, Holt SJ (1957) On the dynamics of exploited fish 
   populations. H.M.S.O., London. 533 pp.
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

@@ -5,8 +5,15 @@
 \alias{splitConnMat}
 \title{Split connectivity matrix into subpopulations}
 \usage{
-splitConnMat(indices, conn.mat, beta, tries = 5, threshold = 1e-10,
-  alpha = 0.1, maxit = 500)
+splitConnMat(
+  indices,
+  conn.mat,
+  beta,
+  tries = 5,
+  threshold = 1e-10,
+  alpha = 0.1,
+  maxit = 500
+)
 }
 \arguments{
 \item{indices}{vector of indices of sites in a subpopulation}
@@ -34,9 +41,6 @@ indices of sites in a subpopulations
 This function tries to optimally split a given subpopulation into
 two smaller subpopulations.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
 P. R. 2012. Identification of subpopulations from connectivity
@@ -47,4 +51,6 @@ See also \code{\link{optimalSplitConnMat}},
 \code{\link{recSplitConnMat}},
 \code{\link{subpopsVectorToList}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

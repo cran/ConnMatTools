@@ -24,10 +24,9 @@ order of the subpopulation indices in the original matrix, which will not
 necessarily be that of the spatial order of sites in the original
 connectivity matrix.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \seealso{
 See also \code{\link{recSplitConnMat}}, \code{\link{qualitySubpops}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

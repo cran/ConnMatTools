@@ -38,4 +38,3 @@ lines(x,dnorm(x,l$mean,l$sd),col="red")
 \author{
 David M. Kaplan \email{dmkaplan2000@gmail.com}
 }
-

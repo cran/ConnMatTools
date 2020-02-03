@@ -42,7 +42,7 @@ protectedAreaSelection <- function(conn.mat,nev=dim(conn.mat)[1],
                                    epsilon.lambda=0.0001,epsilon.uv=0.05,
                                    only.list=T,
                                    ...) {
-  if (class(conn.mat) != "matrix")
+  if (all(class(conn.mat) != "matrix"))
     stop("Input conn.mat must be a matrix.")
   
     

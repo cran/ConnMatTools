@@ -28,9 +28,6 @@ mix of marked and unmarked individuals with known fraction of marked
 individuals. The distributions for marked individuals and for unmarked 
 individuals must be known.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Kaplan DM, Cuif M, Fauvelot C, Vigliola L, Nguyen-Huu T, Tiavouane J and Lett C 
   (in press) Uncertainty in empirical estimates of marine larval connectivity. 
@@ -40,4 +37,6 @@ Kaplan DM, Cuif M, Fauvelot C, Vigliola L, Nguyen-Huu T, Tiavouane J and Lett C
 See also \code{\link{d.rel.conn.dists.func}},
   \code{\link{optim.rel.conn.dists}}.
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

@@ -1,3 +1,13 @@
+ConnMatTools 0.3.5
+------------------
+
+* Small fixes to correct for multiple class inheritance of matrices in r-devel.
+
+ConnMatTools 0.3.4
+------------------
+
+* Small fix to q.rel.conn.dists.func to let you pass extra arguments to the integrate function.
+
 ConnMatTools 0.3.3
 ------------------
 

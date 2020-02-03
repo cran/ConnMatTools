@@ -3,7 +3,6 @@
 \docType{package}
 \name{ConnMatTools}
 \alias{ConnMatTools}
-\alias{ConnMatTools-package}
 \title{Tools for working with connectivity matrices}
 \description{
 Tools for Working with Connectivity Data
@@ -17,19 +16,14 @@ and useful for terrestrial systems as well.
 \tabular{ll}{
 Package: \tab ConnMatTools\cr
 Type: \tab Package\cr
-Version: \tab 0.3.3\cr
-Date: \tab 2016-11-01\cr
+Version: \tab 0.3.5\cr
+Date: \tab 2020-02-03\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab no\cr
 }
 }
 \examples{
 \dontrun{optimalSplitConnMat(CM)}
-}
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-
-Marco Andrello \email{marco.andrello@gmail.com}
 }
 \references{
 Jacobi, M. N., and Jonsson, P. R. 2011. Optimal networks of 
@@ -66,5 +60,9 @@ Beverton RJH, Holt SJ (1957) On the dynamics of exploited fish
 \seealso{
 See \code{\link{optimalSplitConnMat}}, \code{\link{d.rel.conn.beta.prior}}
 }
-\keyword{package}
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
 
+Marco Andrello \email{marco.andrello@gmail.com}
+}
+\keyword{package}

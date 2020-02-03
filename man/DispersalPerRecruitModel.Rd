@@ -4,8 +4,14 @@
 \alias{DispersalPerRecruitModel}
 \title{Population dynamics model based on lifetime-egg-production}
 \usage{
-DispersalPerRecruitModel(LEP, conn.mat, recruits0, timesteps = 10,
-  settler.recruit.func = hockeyStick, ...)
+DispersalPerRecruitModel(
+  LEP,
+  conn.mat,
+  recruits0,
+  timesteps = 10,
+  settler.recruit.func = hockeyStick,
+  ...
+)
 }
 \arguments{
 \item{LEP}{a vector of lifetime-egg-production (LEP; also known as 
@@ -76,9 +82,6 @@ image(1:n,1:20,ret$settlers,xlab="sites",ylab="timesteps",
 locator(1)
 plot(ret$settlers[,20],xlab="sites",ylab="equilibrium settlement")
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Kaplan, D. M., Botsford, L. W., and Jorgensen, S. 2006. Dispersal
   per recruit: An efficient method for assessing sustainability in marine 
@@ -87,4 +90,6 @@ Kaplan, D. M., Botsford, L. W., and Jorgensen, S. 2006. Dispersal
 \seealso{
 See also \code{\link{BevertonHolt}}, \code{\link{hockeyStick}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

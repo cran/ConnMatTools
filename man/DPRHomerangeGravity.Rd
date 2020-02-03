@@ -5,9 +5,19 @@
 \alias{DPRHomerangeGravity}
 \title{Extended DPR population dynamics model to include homerange movement}
 \usage{
-DPRHomerangeGravity(larval.mat, adult.mat, recruits0, f0, timesteps = 10,
-  settler.recruit.func = hockeyStick, LEP.of.f = function(f) 1 - f,
-  YPR.of.f = function(f) f, gamma = 0, gravity.ts.interval = 1, ...)
+DPRHomerangeGravity(
+  larval.mat,
+  adult.mat,
+  recruits0,
+  f0,
+  timesteps = 10,
+  settler.recruit.func = hockeyStick,
+  LEP.of.f = function(f) 1 - f,
+  YPR.of.f = function(f) f,
+  gamma = 0,
+  gravity.ts.interval = 1,
+  ...
+)
 }
 \arguments{
 \item{larval.mat}{a square larval connectivity matrix.  \code{dim(larval.mat)
@@ -66,9 +76,6 @@ Gruss et al. (2011).  The model is an extension of the dispersal-per-recruit
 model in Kaplan et al. (2006) to include movement in a homerange and a 
 gravity model for fishing effort redistribution.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Gruss A, Kaplan DM, Hart DR (2011) Relative Impacts of Adult 
   Movement, Larval Dispersal and Harvester Movement on the Effectiveness of 
@@ -82,4 +89,6 @@ Kaplan, D. M., Botsford, L. W., and Jorgensen, S. 2006. Dispersal
 See also \code{\link{BevertonHolt}}, \code{\link{hockeyStick}}, 
   \code{\link{DispersalPerRecruitModel}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

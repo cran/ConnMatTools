@@ -1,8 +1,8 @@
 Package: ConnMatTools
 Type: Package
 Title: Tools for Working with Connectivity Data
-Version: 0.3.3
-Date: 2016-11-0110.1093/icesjms/fsw182
+Version: 0.3.5
+Date: 2020-02-03
 Author: David M. Kaplan <dmkaplan2000@gmail.com> [cre,aut], Marco Andrello <marco.andrello@gmail.com> [ctb]
 Maintainer: David M. Kaplan <dmkaplan2000@gmail.com>
 Description: Collects several different methods for analyzing and
@@ -20,8 +20,8 @@ Collate: 'ConnMatTools.R' 'eigs.R' 'Jacobi_EPT_reserve_selection.R'
         'estimating_marked_egg_fraction.R' 'retentionStats.R'
         'jacobi_etal_2012.R'
 License: GPL (>= 2)
-RoxygenNote: 5.0.1
+RoxygenNote: 7.0.2
 NeedsCompilation: no
-Packaged: 2016-11-02 15:34:36 UTC; dmk
+Packaged: 2020-02-03 10:15:59 UTC; dmk
 Repository: CRAN
-Date/Publication: 2016-11-02 17:52:03
+Date/Publication: 2020-02-03 10:30:02 UTC

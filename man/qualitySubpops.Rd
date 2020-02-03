@@ -27,9 +27,6 @@ mean(RLR) of the reduced connectivity matrix, where RLR=relative local
 retention (\code{\link{relativeLocalRetention}}), i.e., the fraction of 
 settling individuals that originated at their site of settlement.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012. 
   Identification of subpopulations from connectivity matrices. Ecography, 35:
@@ -39,4 +36,6 @@ Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012.
 See also \code{\link{optimalSplitConnMat}}, 
   \code{\link{subpopsVectorToList}}, \code{\link{relativeLocalRetention}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

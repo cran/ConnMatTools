@@ -4,8 +4,14 @@
 \alias{eigs}
 \title{Compute some eigenvalues of a matrix}
 \usage{
-eigs(M, nev = min(dim(M)[1] - 1, 1), sym = sum(abs(M - t(M)))/sum(abs(M)) <
-  1e-10, which = "LM", use.arpack = TRUE, options.arpack = NULL)
+eigs(
+  M,
+  nev = min(dim(M)[1] - 1, 1),
+  sym = sum(abs(M - t(M)))/sum(abs(M)) < 1e-10,
+  which = "LM",
+  use.arpack = TRUE,
+  options.arpack = NULL
+)
 }
 \arguments{
 \item{M}{a matrix.}
@@ -46,10 +52,9 @@ matrix. It uses \code{\link[igraph]{arpack}} function from the
 the standard \code{\link{eigen}} function to do the calculation, but will 
 issue a warning.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \seealso{
 See also \code{\link[igraph]{arpack}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

@@ -25,12 +25,11 @@ linearly until it reaches a maximum values.
 \code{slope} and \code{Rmax} can both either be scalars or vectors of the 
 same length as \code{S}.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Kaplan, D. M., Botsford, L. W., and Jorgensen, S. 2006. Dispersal
   per recruit: An efficient method for assessing sustainability in marine 
   reserve networks. Ecological Applications, 16: 2248-2263.
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

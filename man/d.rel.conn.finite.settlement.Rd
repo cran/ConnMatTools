@@ -8,11 +8,23 @@
 \title{Estimate the probability distribution for the number of settlers originating 
 at a site given a sample from a finite settler pool}
 \usage{
-d.rel.conn.finite.settlement(n.origin, p, k, n.obs, n.settlers,
-  prior.n.origin = 1)
+d.rel.conn.finite.settlement(
+  n.origin,
+  p,
+  k,
+  n.obs,
+  n.settlers,
+  prior.n.origin = 1
+)
 
-p.rel.conn.finite.settlement(n.origin, p, k, n.obs, n.settlers,
-  prior.n.origin = 1)
+p.rel.conn.finite.settlement(
+  n.origin,
+  p,
+  k,
+  n.obs,
+  n.settlers,
+  prior.n.origin = 1
+)
 
 q.rel.conn.finite.settlement(q, p, k, n.obs, n.settlers, prior.n.origin = 1)
 }
@@ -67,6 +79,7 @@ source site (i.e., site of marking).
 distribution function for the numbers of settlers in the cohort that
 originated at the source site (i.e., site of marking).
 }}
+
 \examples{
 library(ConnMatTools)
 
@@ -106,22 +119,23 @@ abline(v=qis/(7*n.obs),col="black",lty="dashed")
 abline(v=qfs/n.settlers,col="red",lty="dashed")
 
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Kaplan DM, Cuif M, Fauvelot C, Vigliola L, Nguyen-Huu T, Tiavouane J and Lett C 
   (in press) Uncertainty in empirical estimates of marine larval connectivity. 
   ICES Journal of Marine Science. doi:10.1093/icesjms/fsw182.
 }
 \seealso{
-Other connectivity.estimation: \code{\link{d.rel.conn.beta.prior}},
-  \code{\link{d.rel.conn.dists.func}},
-  \code{\link{d.rel.conn.multinomial.unnorm}},
-  \code{\link{d.rel.conn.multiple}},
-  \code{\link{d.rel.conn.unif.prior}},
-  \code{\link{dual.mark.transmission}},
-  \code{\link{optim.rel.conn.dists}},
-  \code{\link{r.marked.egg.fraction}}
+Other connectivity estimation: 
+\code{\link{d.rel.conn.beta.prior}()},
+\code{\link{d.rel.conn.dists.func}()},
+\code{\link{d.rel.conn.multinomial.unnorm}()},
+\code{\link{d.rel.conn.multiple}()},
+\code{\link{d.rel.conn.unif.prior}()},
+\code{\link{dual.mark.transmission}()},
+\code{\link{optim.rel.conn.dists}()},
+\code{\link{r.marked.egg.fraction}()}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\concept{connectivity estimation}

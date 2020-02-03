@@ -29,4 +29,3 @@ rlr <- relativeLocalRetention(chile.loco)
 \author{
 David M. Kaplan \email{dmkaplan2000@gmail.com}
 }
-

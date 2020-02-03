@@ -28,10 +28,10 @@ population settling at the destination population}
 for \code{\link{q.rel.conn.unif.prior}}, which expects log of probabilities
 as inputs}
 
-\item{q}{Vector of quantiles}
-
 \item{\dots}{Extra arguments to Beta distribution functions.  See 
 \code{\link{dbeta}} for details.  For expert use only.}
+
+\item{q}{Vector of quantiles}
 }
 \value{
 Vector of probabilities or quantiles.
@@ -62,6 +62,7 @@ distribution for relative connectivity between a paire of sites
 \item \code{q.rel.conn.unif.prior}: Estimates quantiles for the probability
 distribution function for relative connectivity between a pair of sites
 }}
+
 \examples{
 library(ConnMatTools)
 
@@ -101,22 +102,23 @@ abline(v=qis/(7*n.obs),col="black",lty="dashed")
 abline(v=qfs/n.settlers,col="red",lty="dashed")
 
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Kaplan DM, Cuif M, Fauvelot C, Vigliola L, Nguyen-Huu T, Tiavouane J and Lett C 
   (in press) Uncertainty in empirical estimates of marine larval connectivity. 
   ICES Journal of Marine Science. doi:10.1093/icesjms/fsw182.
 }
 \seealso{
-Other connectivity.estimation: \code{\link{d.rel.conn.beta.prior}},
-  \code{\link{d.rel.conn.dists.func}},
-  \code{\link{d.rel.conn.finite.settlement}},
-  \code{\link{d.rel.conn.multinomial.unnorm}},
-  \code{\link{d.rel.conn.multiple}},
-  \code{\link{dual.mark.transmission}},
-  \code{\link{optim.rel.conn.dists}},
-  \code{\link{r.marked.egg.fraction}}
+Other connectivity estimation: 
+\code{\link{d.rel.conn.beta.prior}()},
+\code{\link{d.rel.conn.dists.func}()},
+\code{\link{d.rel.conn.finite.settlement}()},
+\code{\link{d.rel.conn.multinomial.unnorm}()},
+\code{\link{d.rel.conn.multiple}()},
+\code{\link{dual.mark.transmission}()},
+\code{\link{optim.rel.conn.dists}()},
+\code{\link{r.marked.egg.fraction}()}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\concept{connectivity estimation}

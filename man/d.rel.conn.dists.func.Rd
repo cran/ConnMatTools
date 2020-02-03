@@ -9,20 +9,41 @@
 connectivity given a pair of distributions for scores for marked and unmarked
 individuals}
 \usage{
-d.rel.conn.dists.func(obs, d.unmarked, d.marked, p = 1, N = max(100,
-  min(5000, 2 * length(obs))), prior.shape1 = 0.5,
-  prior.shape2 = prior.shape1, prior.func = function(phi) dbeta(phi,
-  prior.shape1, prior.shape2), ...)
+d.rel.conn.dists.func(
+  obs,
+  d.unmarked,
+  d.marked,
+  p = 1,
+  N = max(100, min(5000, 2 * length(obs))),
+  prior.shape1 = 0.5,
+  prior.shape2 = prior.shape1,
+  prior.func = function(phi) dbeta(phi, prior.shape1, prior.shape2),
+  ...
+)
 
-p.rel.conn.dists.func(obs, d.unmarked, d.marked, p = 1, N = max(100,
-  min(5000, 2 * length(obs))), prior.shape1 = 0.5,
-  prior.shape2 = prior.shape1, prior.func = function(phi) dbeta(phi,
-  prior.shape1, prior.shape2), ...)
+p.rel.conn.dists.func(
+  obs,
+  d.unmarked,
+  d.marked,
+  p = 1,
+  N = max(100, min(5000, 2 * length(obs))),
+  prior.shape1 = 0.5,
+  prior.shape2 = prior.shape1,
+  prior.func = function(phi) dbeta(phi, prior.shape1, prior.shape2),
+  ...
+)
 
-q.rel.conn.dists.func(obs, d.unmarked, d.marked, p = 1, N = max(100,
-  min(5000, 2 * length(obs))), prior.shape1 = 0.5,
-  prior.shape2 = prior.shape1, prior.func = function(phi) dbeta(phi,
-  prior.shape1, prior.shape2), ...)
+q.rel.conn.dists.func(
+  obs,
+  d.unmarked,
+  d.marked,
+  p = 1,
+  N = max(100, min(5000, 2 * length(obs))),
+  prior.shape1 = 0.5,
+  prior.shape2 = prior.shape1,
+  prior.func = function(phi) dbeta(phi, prior.shape1, prior.shape2),
+  ...
+)
 }
 \arguments{
 \item{obs}{Vector of observed score values for potentially marked individuals}
@@ -90,6 +111,7 @@ probability distribution for relative connectivity
 \item \code{q.rel.conn.dists.func}: Returns a function that is quantile
 function for relative connectivity
 }}
+
 \examples{
 library(ConnMatTools)
 data(damselfish.lods)
@@ -137,22 +159,23 @@ plot(phi,D(phi),type="l",
 abline(v=phi.mx,col="green",lty="dashed")
 abline(v=Q(c(0.025,0.975)),col="red",lty="dashed")
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Kaplan DM, Cuif M, Fauvelot C, Vigliola L, Nguyen-Huu T, Tiavouane J and Lett C 
   (in press) Uncertainty in empirical estimates of marine larval connectivity. 
   ICES Journal of Marine Science. doi:10.1093/icesjms/fsw182.
 }
 \seealso{
-Other connectivity.estimation: \code{\link{d.rel.conn.beta.prior}},
-  \code{\link{d.rel.conn.finite.settlement}},
-  \code{\link{d.rel.conn.multinomial.unnorm}},
-  \code{\link{d.rel.conn.multiple}},
-  \code{\link{d.rel.conn.unif.prior}},
-  \code{\link{dual.mark.transmission}},
-  \code{\link{optim.rel.conn.dists}},
-  \code{\link{r.marked.egg.fraction}}
+Other connectivity estimation: 
+\code{\link{d.rel.conn.beta.prior}()},
+\code{\link{d.rel.conn.finite.settlement}()},
+\code{\link{d.rel.conn.multinomial.unnorm}()},
+\code{\link{d.rel.conn.multiple}()},
+\code{\link{d.rel.conn.unif.prior}()},
+\code{\link{dual.mark.transmission}()},
+\code{\link{optim.rel.conn.dists}()},
+\code{\link{r.marked.egg.fraction}()}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\concept{connectivity estimation}

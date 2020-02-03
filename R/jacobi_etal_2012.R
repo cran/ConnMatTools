@@ -349,7 +349,7 @@ optimalSplitConnMat <-
                       prod(dim(conn.mat))/sum(conn.mat)),steps),
              steps=10,
              ... ) {
-    if (class(conn.mat) != "matrix")
+    if (all(class(conn.mat) != "matrix"))
         stop("Input conn.mat must be a matrix.")
     
     pp <- conn.mat

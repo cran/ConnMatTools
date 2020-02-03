@@ -5,9 +5,17 @@
 \alias{protectedAreaSelection}
 \title{Function to select optimal network of protected areas based on connectivity}
 \usage{
-protectedAreaSelection(conn.mat, nev = dim(conn.mat)[1], delta = 0.1,
-  theta = 0.05, M = 20, epsilon.lambda = 1e-04, epsilon.uv = 0.05,
-  only.list = T, ...)
+protectedAreaSelection(
+  conn.mat,
+  nev = dim(conn.mat)[1],
+  delta = 0.1,
+  theta = 0.05,
+  M = 20,
+  epsilon.lambda = 1e-04,
+  epsilon.uv = 0.05,
+  only.list = T,
+  ...
+)
 }
 \arguments{
 \item{conn.mat}{a square connectivity matrix.}
@@ -49,12 +57,11 @@ This function finds the optimal network of protected areas based on
 connectivity using the eigenvalue perturbation approach described in Nilsson 
 Jacobi & Jonsson (2011).
 }
-\author{
-Marco Andrello \email{marco.andrello@gmail.com}
-}
 \references{
 Jacobi, M. N., and Jonsson, P. R. 2011. Optimal networks of 
   nature reserves can be found through eigenvalue perturbation theory of the 
   connectivity matrix. Ecological Applications, 21: 1861-1870.
 }
-
+\author{
+Marco Andrello \email{marco.andrello@gmail.com}
+}

@@ -25,9 +25,6 @@ potentially fewer subpopulations.
 This function tries to merge random subopoulations, checking if the
 result is a better soluton to the minimization problem.
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Jacobi, M. N., Andre, C., Doos, K., and Jonsson,
 P. R. 2012. Identification of subpopulations from connectivity
@@ -36,4 +33,6 @@ matrices. Ecography, 35: 1004-1016.
 \seealso{
 See also \code{\link{optimalSplitConnMat}},
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

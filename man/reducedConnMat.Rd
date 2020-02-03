@@ -46,9 +46,6 @@ sr <- selfRecruitment(reduce.loco)
 lr <- localRetention(reduce.loco)
 rlr <- relativeLocalRetention(reduce.loco)
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012. 
   Identification of subpopulations from connectivity matrices. Ecography, 35:
@@ -57,4 +54,6 @@ Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012.
 \seealso{
 See also \code{\link{qualitySubpops}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

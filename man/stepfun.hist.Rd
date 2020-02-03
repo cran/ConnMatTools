@@ -10,12 +10,12 @@ stepfun.hist(h, ..., normalize = TRUE)
 \arguments{
 \item{h}{an object of type \code{histogram}}
 
+\item{\dots}{Additional arguments for the default \code{\link{stepfun}} 
+function.}
+
 \item{normalize}{Boolean indicating whether or not to normalize the output 
 stepfun so that it integrates to 1. Defaults to \code{TRUE}.  If 
 \code{FALSE}, then the function will integrate to \code{sum(h$counts)}}
-
-\item{\dots}{Additional arguments for the default \code{\link{stepfun}} 
-function.}
 }
 \value{
 A function of class \code{stepfun}.  The height of the steps will be
@@ -73,11 +73,10 @@ plot(phi,D(phi),type="l",
 abline(v=phi.mx,col="green",lty="dashed")
 abline(v=Q(c(0.025,0.975)),col="red",lty="dashed")
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \seealso{
 See also \code{\link{d.rel.conn.dists.func}},
   \code{\link{optim.rel.conn.dists}}.
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

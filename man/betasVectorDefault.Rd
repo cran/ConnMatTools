@@ -28,9 +28,6 @@ vector of beta values
 Helper function to compute a set of beta values using formula used in Jacobi
 et al. (2012).
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012.
   Identification of subpopulations from connectivity matrices. Ecography, 35:
@@ -39,4 +36,6 @@ Jacobi, M. N., Andre, C., Doos, K., and Jonsson, P. R. 2012.
 \seealso{
 See also \code{\link{optimalSplitConnMat}}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}

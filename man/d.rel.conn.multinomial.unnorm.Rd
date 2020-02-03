@@ -5,8 +5,14 @@
 \title{Calculates unnormalized probability density for relative connectivity values 
 from multiple distinct sites}
 \usage{
-d.rel.conn.multinomial.unnorm(phis, ps, ks, n.sample, log = FALSE,
-  dirichlet.prior.alphas = 1/(length(phis) + 1))
+d.rel.conn.multinomial.unnorm(
+  phis,
+  ps,
+  ks,
+  n.sample,
+  log = FALSE,
+  dirichlet.prior.alphas = 1/(length(phis) + 1)
+)
 }
 \arguments{
 \item{phis}{Vector of fractions of individuals (i.e., eggs) from the source 
@@ -84,9 +90,6 @@ image(t,col=heat.colors(12)[12:1],xlab="Rel. Conn., Site 1",ylab="Rel. Conn., Si
 # lead to a total connectivity great than 1
 abline(1,-1,col="black",lty="dashed",lwd=3)
 }
-\author{
-David M. Kaplan \email{dmkaplan2000@gmail.com}
-}
 \references{
 Kaplan DM, Cuif M, Fauvelot C, Vigliola L, Nguyen-Huu T, Tiavouane J and Lett C 
   (in press) Uncertainty in empirical estimates of marine larval connectivity. 
@@ -96,13 +99,17 @@ Berger JO, Bernardo JM, Sun D (2015) Overall Objective Priors.
   Bayesian Analysis 10:189-221. doi:10.1214/14-BA915
 }
 \seealso{
-Other connectivity.estimation: \code{\link{d.rel.conn.beta.prior}},
-  \code{\link{d.rel.conn.dists.func}},
-  \code{\link{d.rel.conn.finite.settlement}},
-  \code{\link{d.rel.conn.multiple}},
-  \code{\link{d.rel.conn.unif.prior}},
-  \code{\link{dual.mark.transmission}},
-  \code{\link{optim.rel.conn.dists}},
-  \code{\link{r.marked.egg.fraction}}
+Other connectivity estimation: 
+\code{\link{d.rel.conn.beta.prior}()},
+\code{\link{d.rel.conn.dists.func}()},
+\code{\link{d.rel.conn.finite.settlement}()},
+\code{\link{d.rel.conn.multiple}()},
+\code{\link{d.rel.conn.unif.prior}()},
+\code{\link{dual.mark.transmission}()},
+\code{\link{optim.rel.conn.dists}()},
+\code{\link{r.marked.egg.fraction}()}
 }
-
+\author{
+David M. Kaplan \email{dmkaplan2000@gmail.com}
+}
+\concept{connectivity estimation}
